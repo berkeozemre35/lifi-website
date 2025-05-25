@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Download</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f5eaff;
+    }
+    .top-panel {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 70px;
+      background: linear-gradient(to right, #8c4dff, #ffb3d9);
+      display: flex;
+      align-items: center;
+      padding: 0 30px;
+      color: white;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      z-index: 10;
+    }
+    .top-panel img {
+      height: 50px;
+      margin-right: 20px;
+      user-select: none;
+      pointer-events: none;
+    }
+    .top-panel h1 {
+      font-size: 22px;
+      font-weight: bold;
+      margin-right: auto;
+    }
+    .menu-buttons {
+      display: flex;
+      gap: 12px;
+    }
+    .button-style {
+      background-color: #c295f0;
+      color: white;
+      border: none;
+      padding: 12px 22px;
+      font-weight: bold;
+      border-radius: 999px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      text-decoration: none;
+      display: inline-block;
+      text-align: center;
+      font-size: 16px;
+    }
+    .button-style:hover {
+      background-color: #b07edf;
+    }
+    .wp-container {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-top: 70px;
+    }
+    .wp-box {
+      padding: 40px;
+      border-radius: 20px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      box-shadow: 0 0 20px rgba(0,0,0,0.2);
+      max-width: 800px;
+      width: 90%;
+      border: 2px solid #b380ff;
+      background: linear-gradient(135deg, #8c4dff, #ffb3d9);
+    }
+    .wp-left {
+      flex: 1;
+      text-align: center;
+    }
+    .wp-left h2 {
+      color: white;
+      font-size: 24px;
+      margin-bottom: 12px;
+      text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+    }
+    .wp-left p {
+      font-size: 16px;
+      color: #fff;
+      margin-bottom: 18px;
+      text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+    }
+    .wp-left ol {
+      margin-left: 0;
+      padding-left: 0;
+      list-style-position: inside;
+      line-height: 1.6;
+      color: #fff;
+      text-align: left;
+      display: inline-block;
+      text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+    }
+    .wp-buttons {
+      margin-top: 25px;
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+    .wp-right {
+      flex: 0 0 230px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .wp-right img {
+      width: 210px;
+      height: 210px;
+      border-radius: 12px;
+      border: 3px solid #fff;
+      box-shadow: 0 0 10px rgba(0,0,0,0.4);
+    }
+  </style>
+</head>
+<body>
+
+<div class="top-panel">
+  <img src="assets/lifi_logo.png" alt="Lifi Logo">
+  <div class="menu-buttons">
+    <a href="index.html" class="button-style">Home</a>
+    <a href="about.html" class="button-style">About</a>
+  </div>
+</div>
+
+<div class="wp-container">
+  <div class="wp-box">
+    <div class="wp-left">
+      <h2>Scan the QR Code and Download the App!</h2>
+      <p>Our app is only available on mobile devices.</p>
+      <ol>
+        <li>Open your phone's QR app and scan the code.</li>
+        <li>Download the app.</li>
+        <li>Register or log in.</li>
+        <li>Join exclusive events!</li>
+      </ol>
+      <div class="wp-buttons">
+        <a href="index.html" class="button-style">Back to Home</a>
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="button-style">Download Now</a>
+      </div>
+    </div>
+    <div class="wp-right">
+      <img src="assets/qr.png" alt="QR Code">
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
